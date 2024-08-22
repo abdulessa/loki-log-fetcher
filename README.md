@@ -34,12 +34,12 @@ The following environment variables can be set to customize the script's behavio
 
 2. **Run the Docker Container:**
 
-  ```bash
-  docker run --rm \
-    -e LOKI_USERNAME="your_username" \
-    -e LOKI_PASSWORD="your_password" \
-    -e LOKI_URL="https://loki.example.com" \
-    -e START_TIME="2024-05-28T00:00:00Z" \
-    -e END_TIME="2024-05-29T11:59:59Z" \
-    -v /path/to/your/logs:/app/logs \
-    loki-log-fetcher
+     ```bash
+     docker run --rm \
+       -e LOKI_USERNAME="your_username" \
+       -e LOKI_PASSWORD="your_password" \
+       -e LOKI_URL="https://loki.example.com" \
+       -e START_TIME="2024-05-28T00:00:00Z" \
+       -e END_TIME="2024-05-29T11:59:59Z" \
+       -v /path/to/your/logs:/app/logs \
+       loki-log-fetcher

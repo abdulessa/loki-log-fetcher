@@ -7,7 +7,7 @@ then
     exit 1
 fi
 
-# Loki credentials
+# Loki Basic auth credentials
 : "${LOKI_USERNAME?Loki username must be provided}"
 : "${LOKI_PASSWORD?Loki password must be provided}"
 : "${LOKI_URL?Loki URL must be provided}"
